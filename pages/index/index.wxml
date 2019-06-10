@@ -1,0 +1,55 @@
+<!-- 课程介绍首页 -->
+<wxs module="imgurlprefix" src='../imageUrl.wxs'></wxs>
+<view class='index'>
+  <view class='index_round'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#999" indicator-active-color="#ff8a00" circular="true" current="0">
+      <block wx:for="{{arr}}">
+        <swiper-item class="swiper-item">
+          <image src="{{imgurlprefix.imgurlprefix}}/{{item.addressImg}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='index_sources'>
+    <view class='index_soueces_title' style='margin-bottom: 20rpx;'>
+      课程介绍
+    </view>
+
+    <scroll-view scroll-x>
+      <view class='sources_item' wx:for="{{productType}}">
+        <view class='nav_item' bindtap='productBind' data-index='{{item.id}}'>
+          <image src='{{imgurlprefix.imgurlprefix}}/{{item.url}}' mode='widthFix'></image>
+        </view>
+      </view>
+    </scroll-view>
+    <view class='clear'></view>
+  </view>
+
+  <view class='index_source'>
+
+    <view class='index_soueces_title' style='margin-left: 20rpx;padding-top:20rpx;'>
+      热门推荐
+    </view>
+
+    <view class='source_item' wx:for="{{videoRecommend}}" data-index='{{item.id}}' bindtap='binfVideo'>
+      <view class='source_item_son  source_item_img'>
+        <!-- <image src='http://www.wdkkgc.cn:8090/group1/M00/00/00/fM-zvlz01y2AevzXAAAwzjmVCuU986.png'  mode='widthFix'></image> -->
+      </view>
+      <view class='source_item_son source_item_js'>
+        <view class='source_item_js_name'>{{item.name}}</view>
+        <view>讲师：{{item.author}}</view>
+        <view class='source_item_js_count'>
+          <image src='../../image/icon_user.png' style='width:30rpx;height:30rpx;'></image>
+          <text>{{item.signupnumber}}</text>
+          <text style='color:red;position: absolute;right:50rpx;'>免费</text>
+        </view>
+      </view>
+
+    </view>
+   
+  </view>
+
+
+
+</view>

@@ -1,0 +1,89 @@
+<!--pages/video/video.wxml-->
+<wxs module="imgurlprefix" src='../imageUrl.wxs'></wxs>
+<view class="loading-page" catchtouchmove='true'  wx:if="{{isLoding}}">
+    <loading>
+        加载中...
+    </loading>
+</view>
+<view class='video'>
+
+  <view class=''>
+    <video style='width: 100%; display: block;' src='http://124.207.179.190:8090/group1/M00/00/00/fM-zvlz3h2CAGbnxC81dNqZ1YZc552.mp4'></video>
+  </view>
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+
+
+  <swiper current="{{currentTab}}" class='swiper-box' duration='700' bindchange="tab_slide" style='height:50%'>
+
+    <swiper-item class='navbar_item'>
+      <scroll-view scroll-y style='height:100%'>
+        <view class='navbar_item_son'>
+          <view style='margin-bottom: 20rpx'>
+            <view class='video_title'>{{videoTech.name}}</view>
+            <view style='font-size: 14px;'>
+              <text>讲师：{{videoTech.author}}</text>
+              <text style='position: absolute;right: 20rpx;'>{{videoTech.signupnumber}} 观看</text>
+            </view>
+          </view>
+
+          <view style='margin-bottom:10rpx;'>
+            <view class='video_title'>课程介绍</view>
+            <view style='font-size: 14px;margin-top: 20rpx;line-height:50rpx;'>
+              {{videoTech.description}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 课程目录 -->
+    <swiper-item class='navbar_item'>
+      <scroll-view scroll-y style='height:100%'>
+        <view class='navbar_item_son'>
+          <view class='video_title'>课程大纲</view>
+          <view style='font-size: 15px;margin-top: 20rpx;line-height:45rpx;'>
+            <view style='line-height: 50rpx;' wx:for="{{chapterList}}" data-index='{{item.id}}'>
+              <view style='display: flex;align-items: center;height:80rpx;'>
+                <image src="../../image/{{item.id == 1? 'play.png ': 'notplay.png '}}" style='width:45rpx;height:40rpx;'></image>
+                <view style=' border-bottom: 1rpx solid rgba(229, 229, 229, 1);width:100%;margin-left: 20rpx;height:100%;display: flex;align-items: center;'>
+                  <text >{{item.name}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+    <!-- 课程评价 -->
+    <swiper-item class='navbar_item'>
+      <scroll-view scroll-y style='height:100%'>
+        <view style='padding: 20rpx;background: #fff; border-bottom: 1rpx solid rgba(229, 229, 229, 1);' wx:for="{{commentList}}">
+          <view style='position: relative;height:100rpx;display: flex;align-items: center;'>
+            <image src='{{imgurlprefix.imgurlprefix}}/{{item.userPo.headUrl}}' style='width:80rpx;height:80rpx;float: left;'></image>
+            <view style='position: absolute;top:2rpx;left:100rpx; line-height: 50rpx;'>
+              <view style='font-size: 14px'>{{item.userPo.xcxUserName}}</view>
+              <view style='font-size: 13px;'>{{item.createTime}}</view>
+            </view>
+          </view>
+          <view style='padding-left:105rpx;line-height: 40rpx;font-size: 14px'>
+            {{item.comment}}
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+
+
+  <view class='bott' hidden='{{isLogin}}'>
+    <view class='bott_bot' bindtap='minesource'>
+      加入我的课程
+    </view>
+
+  </view>
+
+</view>

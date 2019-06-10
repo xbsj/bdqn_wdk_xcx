@@ -1,0 +1,121 @@
+/* pages/mine/setname/setname.wxss */
+.inputbox{
+  width: 100%;
+  padding: 0 40rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.phoneinputbox{
+  width: 100%;
+  height: 110rpx;
+  border-bottom: 1rpx solid #EEEEEE; 
+  margin-top: 40rpx;
+}
+.phoneinputbox input{
+  width: 100%;
+  height: 110rpx;
+}
+.dynamicinputbox{
+  width: 100%;
+  height: 110rpx;
+  border-bottom: 1rpx solid #EEEEEE; 
+}
+.dynamicinputbox input{
+  width: 400rpx;
+  height: 110rpx;
+  float: left;
+  
+}
+.dynamictext{ 
+  font-size:32rpx;
+  float: right;
+  margin-top: 43rpx;
+  color: #ccc;
+}
+.passbtn{
+  width: 100%;
+  height:90rpx; 
+  line-height: 90rpx;
+  padding: 0 40rpx;
+  margin-top: 40rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+.passbtn .passbtn_no{
+  width: 100%;
+  height: 100%;
+  border-radius: 45rpx;
+  border-color: #EBEFF2;
+  background: #EBEFF2;
+  margin:0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.passbtn .passbtn_no{
+  background: #EBEFF2;
+  color: #D6DBE3;
+}
+.passbtn .passbtn_year{
+  background: #2775E9;
+  color: #fff;
+}
+
+.bottomtext{
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #2775E9;
+  position: fixed;
+  bottom: 60rpx;
+  left: 0;
+}
+.passinputbox{
+  width: 100%;
+  height: 110rpx;
+  
+  border-bottom: 1rpx solid #EEEEEE; 
+}
+.passinputbox input{
+  width: 602rpx;
+  height: 110rpx;
+  float: left;
+}
+.passortext{
+  width: 42rpx;
+  height: 24rpx;
+  float: right;
+  margin-top: 43rpx;
+}
+.deteltext{
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 43rpx;
+}
+.readconsent{
+  width: 100%;
+  padding-left:40rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  margin-top: 40rpx;
+}
+.readconsentimgbox{
+  float: left;
+}
+.readconsent .readconsentimgbox image{
+  width: 24rpx;
+  height: 24rpx;
+
+}
+.readconsent_one{
+  color: #666666;
+  margin-left: 9rpx;
+}
+.readconsent_two{
+  color: #3172DC;
+  margin-left: 15rpx;
+}
+.fontColorblue{
+color:  #2775E9;
+
+}

@@ -1,0 +1,6 @@
+<!--pages/service/we/we.wxml-->
+<view>
+  <view >
+    <image  src='../../../image/we.jpg' mode='widthFix'></image>
+  </view>
+</view>

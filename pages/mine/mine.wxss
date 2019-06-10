@@ -1,0 +1,129 @@
+page {
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 245, 245, 1);
+}
+
+.mine {
+  width: 100%;
+  position: relative;
+}
+
+/* 头 */
+
+.mine_head {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(180deg, rgba(56, 73, 237, 1) 0%, rgba(122, 159, 252, 1) 100%);
+}
+
+.mine_head .head_img {
+}
+
+.head_img .mine_head_img {
+  width: 73px;
+  height: 73px;
+  border: 1px solid red;
+  position: absolute;
+  top: 42px;
+  left: 37px;
+  border-radius: 50%;
+}
+
+.mine_getlogin {
+  width: 68px;
+  height: 24px;
+  font-size: 17px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 24px;
+  position: absolute;
+  top: 130rpx;
+  left: 260rpx;
+}
+
+.setting{
+   width: 50rpx;
+  height: 50rpx;
+  position:absolute;
+  right: 50rpx;
+  top: 130rpx
+}
+
+.mine_choice {
+  width: 90%;
+  position: absolute;
+  top: 135px;
+  left: 18px;
+}
+
+.choice_item {
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  position: relative;
+}
+
+.choice_item_introduce {
+  width: 100%;
+  height: 51px;
+  font-size: 16px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+
+.choice_line {
+  width: 90%;
+  border-top: 1rpx solid rgba(229, 229, 229, 1);
+  margin-left: 17px;
+  background: rgba(229, 229, 229, 1);
+}
+
+.choice_mode {
+  width: 100%;
+  height: 159rpx;
+  position: relative;
+}
+
+.choice_item_two {
+  margin-top: 20rpx;
+}
+
+.choice_mode_item {
+  float: left;
+}
+
+.serviceimg {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 23px;
+  bottom: 28px;
+}
+
+.servicewriting {
+  width: 80px;
+  height: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+  position: absolute;
+  left: 85px;
+  bottom: 32px;
+}
+
+.jiantou {
+  width: 8px;
+  height: 15px;
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
+}

@@ -1,0 +1,8 @@
+/**
+ * 全局图片设置
+ */
+var imgurlprefix = "http://www.wdkkgc.cn:8090"
+
+module.exports = {
+  imgurlprefix: imgurlprefix,
+}

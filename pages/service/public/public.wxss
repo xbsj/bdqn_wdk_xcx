@@ -1,0 +1,9 @@
+/* pages/service/public/public.wxss */
+page,view,image{
+  padding: 0rpx;
+  margin: 0rpx;
+}
+
+image{
+  width: 100%;
+}

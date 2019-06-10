@@ -1,0 +1,19 @@
+/* pages/sourcespresent/benet/benet.wxss */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+page,view{
+  position: 0rpx;
+  margin: 0rpx;
+  vertical-align: top;
+}
+image{
+  width: 100%;
+  margin: 0px;
+  vertical-align: top;
+}

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/landingStep/landing/landing",
+    "pages/mine/setting/setting",
+    "pages/sourcespresent/benet/benet",
+    "pages/mine/setname/setname",
+    "pages/mine/setpage/setpage",
+    "pages/service/contact/contact",
+    "pages/service/we/we",
+    "pages/service/public/public",
+    "pages/service/sign/sign",
+    "pages/videoindex/videoindex",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "五道口青鸟学校 ",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/shouye_1@2x.png",
+        "selectedIconPath": "/image/shouye_2@2x.png"
+      },
+      {
+        "pagePath": "pages/videoindex/videoindex",
+        "text": "视频"
+      },
+      {
+        "pagePath": "pages/service/sign/sign",
+        "text": "联系我们"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "/image/my_1@2x.png",
+        "selectedIconPath": "/image/my_2@2x.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

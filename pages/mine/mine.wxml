@@ -1,0 +1,66 @@
+<wxs module="imgurlprefix" src='../imageUrl.wxs'></wxs>
+
+<view class='mine'>
+  <view class='mine_head'>
+    <view wx:if="{{isLogin}}" class="head_img {{isLogin ?'' : 'msgNoLogin'}}" bindtap='setting'>
+      <view class='mine_head'>
+        <image class='mine_head_img' src='{{imgurlprefix.imgurlprefix}}/mine/{{xcxUser.headUrl}}'></image>
+        <view class='mine_getlogin'>{{xcxUser.xcxUserName}}</view>
+
+        <image class='setting' src='{{imgurlprefix.imgurlprefix}}/mine/set@3x.png'></image>
+      </view>
+    </view>
+
+    <view wx:else class="head_img msgNoLogin" bindtap='gotoLogPath'>
+      <view class='mine_head'>
+        <image class='mine_head_img' src='{{imgurlprefix.imgurlprefix}}/mine/uface@3x.png'></image>
+        <view class='mine_getlogin'>登陆</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='mine_choice'>
+
+    <view class='choice_item'>
+      <view class='choice_item_introduce'>个人服务</view>
+      <view class='choice_line'></view>
+      <view class='choice_mode' bindtap='contact'>
+        <view class='choice_mode_item serviceimg' >
+          <image style='width:28px;height:28px;' mode='' src='../../image/lianxikefu-2 copy@2x.png' mode='widthFix'></image>
+        </view>
+        <view class='choice_mode_item servicewriting'>联系客服</view>
+        <view class='choice_mode_item jiantou'>
+          <image class='' style='width:8px;height:15px;' src='../../image/youjiantou@2x.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='choice_item choice_item_two'>
+      <view class='choice_item_introduce'>更多推荐</view>
+      <view class='choice_line'></view>
+      <view class='choice_mode' bindtap='publicNumber'>
+        <view class='choice_mode_item serviceimg'>
+          <image style='width:28px;height:28px;' mode='' src='../../image/gongzhonghao-2 copy@2x.png' mode='widthFix'></image>
+        </view>
+        <view class='choice_mode_item servicewriting'>关注公众号</view>
+        <view class='choice_mode_item jiantou'>
+          <image class='' style='width:8px;height:15px;' src='../../image/youjiantou@2x.png'></image>
+        </view>
+      </view>
+      <view class='choice_line'></view>
+      <view class='choice_mode' bindtap='webindtap'>
+        <view class='choice_mode_item serviceimg'>
+          <image style='width:28px;height:28px;' mode='' src='../../image/guanyuwomenyi copy@2x.png' mode='widthFix'></image>
+        </view>
+        <view class='choice_mode_item servicewriting'>关于我们</view>
+        <view class='choice_mode_item jiantou'>
+          <image class='' style='width:8px;height:15px;' src='../../image/youjiantou@2x.png'></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+
+</view>

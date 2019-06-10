@@ -1,0 +1,19 @@
+<!--pages/mine/setting/setting.wxml-->
+<wxs module="imgurlprefix" src='../../imageUrl.wxs'></wxs>
+<view>
+  <!-- <view class='setting_head' bindtap='chooseimage'>
+    <text>上传头像</text>
+  
+    <image class='head_img'  src='{{imgurlprefix.imgurlprefix}}/mine/{{xcxUser.headUrl}}'></image>
+    <image class='left_arrow' src='/image/leftarrow.png'></image>
+    
+  </view> -->
+  <view class='setting_name' bindtap='setName'>
+    <text>修改姓名</text>
+    <view class='setName'>{{xcxUser.xcxUserName}}</view>
+    <image class='left_arrow' src='/image/leftarrow.png'></image>
+  </view>
+  <view class='setting_signout' bindtap='signout'>
+    <text>退出登陆</text>
+  </view>
+</view>

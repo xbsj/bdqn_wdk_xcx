@@ -1,0 +1,8 @@
+<!--pages/landingStep/landing/landing.wxml-->
+<view>
+  <view class='image'>
+    <image src='../../../image/logo.png'></image>
+  </view>
+  <button class='' open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">微信用户一键登录</button>
+</view>
+

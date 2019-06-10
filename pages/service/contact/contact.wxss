@@ -1,0 +1,18 @@
+/* pages/service/contact/contact.wxss */
+page,view,image{
+  padding: 0rpx;
+  margin: 0rpx;
+}
+
+image{
+  width: 100%;
+}
+
+.callme{
+  width: 58%;
+  height: 7%;
+  position: absolute;
+  bottom: 4.5%;
+  left: 20.5%
+
+}

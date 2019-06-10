@@ -1,0 +1,10 @@
+/* pages/service/we/we.wxss */
+page,view,image{
+  padding: 0rpx;
+  margin: 0rpx;
+}
+
+image{
+  width: 100%;
+  height: 100%
+}

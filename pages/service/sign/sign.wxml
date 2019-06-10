@@ -1,0 +1,19 @@
+<!--pages/service/sign/sign.wxml-->
+<view class='sign'>
+
+  <view class='sign_cons'>
+    <view class='sign_phone'>
+      <button class='sign_buttn' bindtap='callme'>电话咨询</button>
+    </view>
+    <view class='sign_weixin' bindtap='weixinbind'>
+      <button class='sign_buttn' open-type='contact'>在线客服</button>
+    </view>
+  </view>
+
+  <view class='sign_address'>
+    <view bindtap='openmap'>
+      <text>北大青鸟五道口校区</text>
+    </view>
+  </view>
+ 
+</view>

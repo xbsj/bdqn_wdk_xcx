@@ -1,0 +1,28 @@
+<view class='video'>
+  <view class='index_search'>
+    <input type="text" placeholder="输入你想要的内容" confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='query'></input>
+  </view>
+  <view class='video_url'>
+    <video src='http://124.207.179.190:8090/group1/M00/00/00/fM-zvlz3h2CAGbnxC81dNqZ1YZc552.mp4' autoplay='true' page-gesture='true' auto-pause-if-navigate='false'></video>
+  </view>
+
+  <view class='index_source'>
+    <view class='source_item' wx:for="{{videoall}}" data-index='{{item.id}}' bindtap='binfVideo'>
+      <view class='source_item_son  source_item_img'>
+        <!-- <image src='http://www.wdkkgc.cn:8090/group1/M00/00/00/fM-zvlz01y2AevzXAAAwzjmVCuU986.png'  mode='widthFix'></image> -->
+      </view>
+      <view class='source_item_son source_item_js'>
+        <view class='source_item_js_name'>{{item.name}}</view>
+        <view>讲师：{{item.author}}</view>
+        <view class='source_item_js_count'>
+          <image src='../../image/icon_user.png' style='width:30rpx;height:30rpx;'></image>
+          <text>{{item.signupnumber}}</text>
+          <text style='color:red;position: absolute;right:50rpx;'>免费</text>
+        </view>
+      </view>
+
+    </view>
+   
+  </view>
+
+</view>

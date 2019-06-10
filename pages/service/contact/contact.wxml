@@ -1,0 +1,9 @@
+<!--pages/service/contact/contact.wxml-->
+<view>
+  <view style='height:{{windowHeight}}px'>
+    <image style='height:{{windowHeight}}px' data-src='../../../image/consult.gif' src='../../../image/consult.gif' bindtap="previewImage" show-menu-by-longpress='true'></image>
+  </view>
+  <view class='callme' bindtap='callme'>
+
+  </view>
+</view>

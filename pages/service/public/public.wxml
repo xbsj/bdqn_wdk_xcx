@@ -1,0 +1,6 @@
+<!--pages/service/public/public.wxml-->
+<view>
+  <view style='height:{{windowHeight}}px'>
+    <image style='height:{{windowHeight}}px' src='../../../image/public.jpg' show-menu-by-longpress='true'></image>
+  </view>
+</view>

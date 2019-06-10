@@ -1,0 +1,11 @@
+<!--pages/sourcespresent/benet/benet.wxml-->
+<wxs module="imgurlprefix" src='../../imageUrl.wxs'></wxs>
+
+<view class='sources'>
+
+ 
+    <view class='benet_sources' wx:for="{{product}}">
+        <image src='{{imgurlprefix.imgurlprefix}}/{{item.url}}' lazy-load='true' mode='widthFix'></image>
+    </view>
+
+</view>
